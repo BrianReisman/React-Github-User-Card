@@ -1,5 +1,4 @@
 import React from 'react'
-import { followers } from '../../../data'
 import '../MyFollowers.css';
 
 export default function Follower({follower}) {
@@ -8,7 +7,7 @@ export default function Follower({follower}) {
     <div className="followerCard">
       <code>Code name: {follower.login}</code>
       <br/>
-      <img src={follower.avatar_url} alt='less smug mug'/>
+      <a href={follower.html_url}><img src={follower.avatar_url} alt='less smug mug'/></a>
     </div>
   )
 }

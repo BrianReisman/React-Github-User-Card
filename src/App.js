@@ -3,7 +3,7 @@ import MyCard from "./components/MyCard/MyCard";
 import MyFollowers from "./components/MyFollowers/MyFollowers";
 import React from "react";
 import axios from "axios";
-import {data, followers} from "./data";
+// import {data, followers} from "./data";
 
 class App extends React.Component {
   state = {
@@ -12,21 +12,20 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({ data: data });
-    this.setState({ followers: followers });
-    // axios.get('https://api.github.com/users/BrianReisman/')
-    //   .then(res => {
-    //     console.log(res.data)
-    //   })
-    //   .catch()
-    // axios.get('https://api.github.com/users/BrianReisman/followers')
-    //   .then(res => {
-    //     console.log(res.data)
-    //   })
-    //   .catch()
+    axios.get('https://api.github.com/users/BrianReisman')
+    .then(res => {
+      console.log(res.data)
+      this.setState({ data: res.data });
+    })
+    .catch()
+
+    axios.get('https://api.github.com/users/BrianReisman/followers')
+    .then(res => {
+      console.log(res.data)
+      this.setState({ followers: res.data });
+      })
+      .catch()
   }
-
-
 
   render() {
     console.log(this.state.data);
@@ -34,7 +33,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>The Lowdown on my Github Account</h1>
+          <h1>Welcome to my GitHub Page</h1>
           <MyCard data={this.state.data} />
           <MyFollowers followers={this.state.followers}/>
         </header>
