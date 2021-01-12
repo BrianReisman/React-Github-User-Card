@@ -14,11 +14,11 @@ Commit your code regularly and meaningfully. This helps you and any collaborator
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Use CRA to create a new React app in this repository
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository in your terminal
+- [x] Use CRA to create a new React app in this repository
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
@@ -68,6 +68,18 @@ When you have those completed, you're ready to start coding!
 #### Project Retrospective
 
 Now that you have completed the MVP, I want you to think about the process it took you to get here. Is there anything you wish you had planned better? Anything you would do differently? Now take a minute think about how you would accomplish these same objectives with function components and hooks. You have experience with both formats now, so you can form opinions, but more importantly, you can back up those opinions. That's a really exciting level to be at! If you have time now, go ahead and move onto the stretch problems.
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Task 3: Stretch Problems
 
