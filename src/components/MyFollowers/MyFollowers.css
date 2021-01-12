@@ -1,0 +1,32 @@
+*{
+  border: 1px solid white;
+}
+
+.followersCard{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  max-width: 900px;
+
+}
+
+.followerCard{
+  background-color: blue;
+  margin: 5%;
+  padding: 5%;
+  max-width: 15%;
+}
+
+.followerCard img{
+  max-width: 80px;
+}
+
+h3{
+  color: tomato;
+}
+
+#strike{
+  text-decoration: line-through;
+}

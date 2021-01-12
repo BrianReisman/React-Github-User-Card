@@ -1,5 +1,6 @@
 import React from 'react'
 import { followers } from '../../../data'
+import '../MyFollowers.css';
 
 export default function Follower({follower}) {
   console.log(follower)
